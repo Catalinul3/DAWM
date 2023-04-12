@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/animals_and_continents">
+
+    <fragment
+        android:id="@+id/animals_and_continents"
+        android:name="com.example.zoo.fragments.FirstFragment"
+
+        tools:layout="@layout/animals_and_continents">
+        <action
+            android:id="@+id/action_animals_and_continents_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.zoo.fragments.SecondFragment"
+        android:label="SecondFragment" />
+</navigation>
